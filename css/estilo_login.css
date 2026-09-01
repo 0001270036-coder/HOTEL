@@ -1,0 +1,9 @@
+#fundo_tela{
+            background-color: bisque;
+        }
+        .titulo_login{
+            background-color: blueviolet;
+            color: black;
+            text-align: center;
+            border: 1px solid blueviolet;
+        }
