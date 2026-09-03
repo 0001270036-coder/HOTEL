@@ -9,6 +9,26 @@
     <link rel="shortcut icon" href="img/images.jpg" type="image/x-icon">
 </head>
 <body id="fundo_tela">
-    <h1 class="titulo_login">Faça seu login <img src="img/hotel.webp" alt="imagem ilustrativa de um hotel" width="35"> </h1>
+    <h1 class="titulo_login">Acesso do cliente<img src="img/hotel.webp" alt="imagem ilustrativa de um hotel" width="35"> </h1>
+
+    <div class="caixa_login">
+        <h2 class="login">Faça seu login</h2>
+    
+    <form action="autenticar.php" method="post">
+        <div>
+        <label for="email_usuario">E-mail:</label>
+        <input type="email" name="email_usuario" id="email_usuario" class="caixa_resposta">
+
+        <br><br>
+
+        <label for="senha_usuario">Senha:</label>
+        <input type="password" name="senha_usuario" id="senha_usuario" class="caixa_resposta">
+
+        <br><br>
+
+        <button class="button_entrar">Entrar</button>
+     </div> 
+    </form>
+   </div>
 </body>
 </html>

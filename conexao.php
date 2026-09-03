@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$usuario = "root"
+$usuario = "root";
 $senha = "";
 $banco = "hotel_db";
 
