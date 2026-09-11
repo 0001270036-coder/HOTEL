@@ -1,0 +1,59 @@
+<html>
+    <herd>
+
+        <title>
+            Cadastro_hotel
+        </title>
+
+        <!-- 2. CSS INTERNO -->
+        <style>
+            form {
+                width: 350px;
+                margin: 0 auto;
+            }
+            input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #641b4a;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+            button {
+                width: 100%;
+                padding: 12px;
+                background-color: #390527;
+                color: rgb(110, 1, 106);
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            button:hover {
+                background-color: #4f1a42;
+            }
+        </style>
+    </head>
+    <body>
+        
+
+    </herd>
+
+    <body>
+        <h1 style="text-align: center; color: #630141c3;">hotelsystem</h1>
+        <h2 style="text-align: center;"> Cadastro de hotel</h2>
+        <form action="salvar_hotel_php" method="post">
+        <label for="nome">nome do hotel</label><br>
+        <input type="text" name="nome" id="nome" required><br><br>
+
+        <label for="cidade">cidade</label><br>
+        <input type="text" name="cidade" id="cidade" required><br><br>
+          
+        <label for="estrelas">classificacao em estrelas(1a5)</label><br>
+        <input type="number" name="estrelas" id="estrelas" min="1"max="5" required><br><br>
+        <button>cadastrar hotel</button>
+
+        </form>
+        <br><br>
+        <a href="index.html" style="text-align: center;">clique aqui para retornar</a>
+    </body>
+</html>
