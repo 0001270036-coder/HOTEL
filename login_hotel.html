@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>Login Hotel - hotelsystem</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        h1 { color: #000000; text-align: center; margin-bottom: 5px; }
+        h2 { text-align: center; margin-top: 0; }
+        form {
+            width: 350px;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #9c6b99;
+            border-radius: 5px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #3f115e;
+            color: rgb(173, 55, 150);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover { background-color: #522334; }
+        .link { margin-top: 20px; text-align: center; display: block; }
+    </style>
+</head>
+<body>
+
+    <h1>hotelsystem</h1>
+    <h2>Acesso do Hotel / Parceiro</h2>
+
+    <form action="autenticar_hotel.php" method="POST">
+        <label for="email">E-mail do Hotel</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" required>
+
+        <button type="submit">Acessar Painel do Hotel</button>
+    </form>
+
+    <a class="link" href="cadastro_hotel.html">Ainda não é parceiro? Cadastre seu hotel</a>
+    <a class="link" href="index.html">Voltar para página principal</a>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>Cadastrar Quarto - hotelsystem</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        h1 { color: #470050; text-align: center; margin-bottom: 5px; }
+        h2 { text-align: center; margin-top: 0; }
+        form {
+            width: 380px;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(130, 64, 120, 0.1);
+        }
+        label { font-weight: bold; display: block; margin-top: 10px; }
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #8d5e7f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        button:hover { background-color: #a0456e; }
+        .logout { margin-top: 15px; display: block; text-align: center; color: rgb(83, 38, 87); }
+    </style>
+</head>
+<body>
+
+    <h1>hotelsystem</h1>
+    <h2>Gerenciamento de Quartos - Cadastrar Quarto</h2>
+
+    <formaction="salvar_quarto.php" method="POST">
+        
+        <label for="id_hotel">ID do Hotel</label>
+        <input type="number" name="id_hotel" id="id_hotel" required placeholder="Ex: 1">
+
+        <label for="numero">Número do Quarto (ex: "101", "202-A")</label>
+        <input type="text" name="numero" id="numero" required placeholder="101">
+
+        <label for="tipo">Tipo de Quarto (ex: Solteiro, Casal, Suite Luxo)</label>
+        <input type="text" name="tipo" id="tipo" required placeholder="Solteiro">
+
+        <label for="preco">Preço da Diária (R$)</label>
+        <input type="number" name="preco" id="preco" step="0.01" min="0" required placeholder="150.00">
+
+        <button type="submit">Salvar Quarto</button>
+    </form>
+
+    <a class="logout" href="logout_hotel.php">Sair / Deslogar do sistema</a>
+
+</body>
+</html>
+

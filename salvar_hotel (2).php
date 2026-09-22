@@ -14,13 +14,13 @@
                 width: 100%;
                 padding: 10px;
                 box-sizing: border-box;
-                border: 1px solid #450634;
+                border: 1px solid #ccc;
                 border-radius: 5px;
             }
             button {
                 width: 100%;
                 padding: 12px;
-                background-color: #590355;
+                background-color: #4CAF50;
                 color: white;
                 border: none;
                 border-radius: 5px;
