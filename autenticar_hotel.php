@@ -1,5 +1,4 @@
 <?php
-// 1. Incluir conexao
 include("conexao.php");
 session_start();
 
