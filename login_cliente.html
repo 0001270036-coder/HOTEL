@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+
+     <style>
+        form {
+            width: 540px;
+            margin: 0 auto;
+            padding: 35px 50px 40px;
+            background:linear-gradient(135deg,#00040e,#021b4b);
+            border-radius: 12px;
+            box-shadow: 0 8px 20px #ffffff;
+            color: aliceblue;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 35px;
+            width: 100%;
+            padding: 10px;
+            background-color: #137a9c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+       button:hover{
+        background-color: #1f055c;
+        transform: scale(1.03);
+
+        }
+     </style>
+
+
+</head>
+<body>
+    <h1 style="text-align:center ;">HotelSistem</h1>
+    <h2 style="color: #333333;text-align: center;" >Acesso do cliente</h2>
+    <div>
+    <form action="autenticar_hotel.php" method="post">
+
+        
+            <label for="email">E-mail</label>
+            <br>
+            <input type="email" id="email" name="email" class="input" placeholder="Digite seu E-mail">
+            <br><br>
+
+           
+            <label for="senha">Senha</label>
+            <br>
+            <input type="password" id="senha" name="senha" class="input" placeholder="Digite sua senha">
+            <br><br>
+             
+            <button>Entrar</button>
+    </form>
+    </div>
+</body>
+</html>

@@ -20,7 +20,7 @@
             button {
                 width: 100%;
                 padding: 12px;
-                background-color: #4CAF50;
+                background-color: #692572;
                 color: white;
                 border: none;
                 border-radius: 5px;
@@ -30,7 +30,7 @@
     </head>
     <body>
         <!-- 3. CSS INLINE -->
-        <h1 style="color: #b8860b; text-align: center;">Imperial Palace</h1>
+        <h1 style="color: #b80b6a; text-align: center;">Imperial Palace</h1>
         
         <h2 style="text-align: center;">Cadastro de Hotel</h2>
 
